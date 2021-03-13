@@ -1,0 +1,49 @@
+.menu-button__container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.menu-button {
+  align-self: flex-end;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: #fff;
+  box-shadow: 8px 7px 8px 0px rgba(0, 0, 0, 0.61);
+  -webkit-box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.61);
+}
+
+.menu__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  margin-left: -50vw;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.is-open {
+  visibility: visible;
+  margin-left: 0vw;
+}
+
+li.menu-item {
+  font-size: 1.3rem;
+  list-style: none;
+  padding: 0.5rem;
+}
+li.menu-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.close-menu-icon {
+  align-self: flex-end;
+  color: #fff;
+  padding: 1.5rem;
+}
